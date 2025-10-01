@@ -1,1 +1,21 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+
+.page-wrapper {
+    width: 90%;
+    max-width: 60em;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+header {
+    text-align: center;
+    background: url('images/css-zen-garden.png') no-repeat center;
+    background-size: contain;
+    height: 300px;
+}
+h1 {
+    color: transparent;
+}
+h2 {
+   color: transparent
+}
