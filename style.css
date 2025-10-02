@@ -10,9 +10,6 @@ header {
     padding: 2em; 
 }
 
-
-
-
 .page-wrapper {
         width: 90%;
         max-width: 60em;
@@ -25,88 +22,9 @@ header {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-/* clearfix to contain floated sidebar */
-.page-wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* --- Design-selection / Sidebar styles to match screenshot --- */
-.page-wrapper > aside.sidebar {
-    float: left;
-    width: 240px;
-    background: #c6d69e; /* pale green column */
-    color: #fff; /* headings will be white-ish */
-    padding: 1.5rem; /* keep content inset but don't change page-wrapper padding */
-    box-sizing: border-box;
-    margin-top: 420px; /* offset so the sidebar sits below the header (matches header min-height) */
-    margin-right: 1.5rem; /* gap between sidebar and main content */
-}
-
-.page-wrapper > aside.sidebar h3,
-.page-wrapper > aside.sidebar h4 {
-    margin: 0 0 1rem 0;
-    color: #f7f9f2; /* off-white */
-    font-weight: 700;
-}
-
-.page-wrapper > aside.sidebar .design-selection {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.25rem 0;
-}
-
-.page-wrapper > aside.sidebar .design-selection li {
-    padding: 0.45rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-
-.page-wrapper > aside.sidebar .design-selection li a {
-    color: rgba(255,255,255,0.95);
-    text-decoration: none;
-    display: block;
-}
-
-.page-wrapper > aside.sidebar .design-selection li small {
-    display: block;
-    color: rgba(255,255,255,0.85);
-    margin-top: 0.25rem;
-    font-weight: 400;
-}
-
-/* Archive / Resources section spacing similar to screenshot */
-.page-wrapper > aside.sidebar .section-block {
-    margin-top: 1.25rem;
-}
-
-/* Make the intro and main content occupy the right column and be narrower */
-.page-wrapper > section.intro,
-.page-wrapper > .main {
-    margin-left: calc(240px + 1.5rem); /* make room for the floated sidebar */
-    max-width: 32em; /* cap the right column content width to 'squish' the text */
-}
-
-/* On small screens keep the sidebar background neutral (stacked layout) */
-@media (max-width: 900px) {
-    .page-wrapper > aside.sidebar {
-        float: none;
-        width: auto;
-        background: transparent;
-        padding: 0 0 1rem 0;
-        margin-top: 0;
-        margin-right: 0;
-    }
-    .page-wrapper > section.intro,
-    .page-wrapper > .main {
-        margin-left: 0;
-        max-width: none;
-    }
-}
-
 body {
     margin: 0;
-    background: url('images/persona-5-stars.jpg'); 
+    background: url('images/persona-5-stars.jpg') ; 
 }
 *    {
     font-family: 'Trebuchet MS', sans-serif;
@@ -125,4 +43,45 @@ h2 {
 
 #zen-summary {
     border: 1px
+}
+
+
+a {
+  background-image: linear-gradient(
+    to right,
+    #d92323,
+    #d92323 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background: #d92323;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
+a:visited {
+    color: rgb(255, 255, 255)
 }
