@@ -1,7 +1,7 @@
 header {
     background: url('images/css-zen-garden.png') no-repeat top center;
     background-size: contain; 
-    min-height: 420px; 
+    min-height: 400px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
@@ -12,10 +12,10 @@ header {
 
 .page-wrapper {
         width: 90%;
-        max-width: 60em;
+        max-width: 960px;
         margin: 0 auto;
         background: rgb(255, 255, 255);
-    padding: 2em;
+    padding: 5em;
     padding-top: 0;
         position: relative;
         border: 1px solid rgba(0,0,0,0.8);
@@ -24,15 +24,13 @@ header {
 
 body {
     margin: 0;
-    background: url('images/persona-5-stars.jpg') ; 
+    background: url('images/persona-5-stars.gif'); 
 }
 *    {
     font-family: 'Trebuchet MS', sans-serif;
 }
 header {
     text-align: center;
-   
-    
 }
 h1 {
     color: transparent;
@@ -49,8 +47,8 @@ h2 {
 a {
   background-image: linear-gradient(
     to right,
-    #d92323,
-    #d92323 50%,
+    #ee2727,
+    #b51b1b 50%,
     #000 50%
   );
   background-size: 200% 100%;
@@ -59,6 +57,7 @@ a {
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -83,5 +82,5 @@ a:hover::before {
   width:100%;
 }
 a:visited {
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
