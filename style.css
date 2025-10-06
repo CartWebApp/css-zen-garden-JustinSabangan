@@ -31,7 +31,7 @@ header {
     align-items: start;
 }
 
-.page-wrapper .intro {
+.page-wrapper > .intro {
     grid-area: intro;
 }
 .page-wrapper aside {
@@ -53,14 +53,62 @@ header {
 #zen-preamble h3 { 
     background: url('images/RTE.png') no-repeat top center;
     background-size: contain; 
-    min-height: 420px; 
+    min-height: 250px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
-    margin-left: -2em; 
-    margin-right: -2em;
+    margin-left: 2em; 
+    margin-right: 2em;
+    padding: 1em; 
+    text-indent: -9999px;
+}
+#zen-explanation h3 {
+    background: url('images/SWA.png') no-repeat top center;
+    background-size: contain; 
+    min-height: 200px; 
+    background-color: #fff; 
+    display: block;
+    box-sizing: border-box;
+    margin-left: 2em; 
+    margin-right: 2em;
+    padding: 1em; 
+    text-indent: -9999px;
+}
+#zen-participation h3 {
+    background: url('images/Participation.png') no-repeat top center;
+    background-size: contain; 
+    min-height: 200px; 
+    background-color: #fff; 
+    display: block;
+    box-sizing: border-box;
+    margin-left: 2em; 
+    margin-right: 2em;
+    padding: 1em; 
+    text-indent: -9999px;
+}
+#zen-benefits h3 {
+    background: url('images/Benefits.png') no-repeat top center;
+    background-size: contain; 
+    min-height: 200px; 
+    background-color: #fff; 
+    display: block;
+    box-sizing: border-box;
+    margin-left: 2em; 
+    margin-right: 2em;
+    padding: 1em; 
+    text-indent: -9999px;
+}
+#zen-requirements h3 {
+    background: url('images/Requirements.png') no-repeat top center;
+    background-size: contain; 
+    min-height: 200px; 
+    background-color: #fff; 
+    display: block;
+    box-sizing: border-box;
+    margin-left: 2em; 
+    margin-right: 2em;
     padding: 2em; 
-
+    text-indent: -9999px;
 }
 body {
     margin: 0;
@@ -99,6 +147,7 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  font-weight: 700;
 }
 
 a:before {
@@ -121,5 +170,6 @@ a:hover::before {
   width:100%;
 }
 a:visited {
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    font-weight: 700;
 }
