@@ -1,7 +1,7 @@
 header {
     background: url('images/css-zen-garden.png') no-repeat top center;
     background-size: contain; 
-    min-height: 400px; 
+    min-height: 420px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
@@ -11,26 +11,67 @@ header {
 }
 
 .page-wrapper {
-        width: 90%;
-        max-width: 960px;
-        margin: 0 auto;
-        background: rgb(255, 255, 255);
-    padding: 5em;
+    width: 90%;
+    max-width: 60em;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    padding: 2em;
     padding-top: 0;
-        position: relative;
-        border: 1px solid rgba(0,0,0,0.8);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "intro intro"
+        "aside main";
+    gap: 1.5em;
+    align-items: start;
 }
 
+.page-wrapper .intro {
+    grid-area: intro;
+}
+.page-wrapper aside {
+    grid-area: aside;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.page-wrapper .main {
+    grid-area: main;
+    margin-left: 0; 
+}
+    .page-wrapper aside {
+        width: auto;
+        margin: 0 0 1em 0;
+    }
+#zen-preamble h3 { 
+    background: url('images/RTE.png') no-repeat top center;
+    background-size: contain; 
+    min-height: 420px; 
+    background-color: #fff; 
+    display: block;
+    box-sizing: border-box;
+    margin-left: -2em; 
+    margin-right: -2em;
+    padding: 2em; 
+
+}
 body {
     margin: 0;
-    background: url('images/persona-5-stars.gif'); 
+    background: url('images/persona-5-stars.gif') ; 
 }
 *    {
     font-family: 'Trebuchet MS', sans-serif;
 }
+
 header {
-    text-align: center;
+    text-align: center; 
 }
 h1 {
     color: transparent;
@@ -42,8 +83,6 @@ h2 {
 #zen-summary {
     border: 1px
 }
-
-
 a {
   background-image: linear-gradient(
     to right,
