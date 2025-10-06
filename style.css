@@ -40,9 +40,11 @@ header {
     width: 100%;
     box-sizing: border-box;
 }
+[href] { 
+    text-transform: capitalize;
+}
 
-
-.page-wrapper .main {
+.page-wrapper.main {
     grid-area: main;
     margin-left: 0; 
 }
@@ -59,25 +61,25 @@ header {
     box-sizing: border-box;
     margin-left: 2em; 
     margin-right: 2em;
-    padding: 1em; 
+    padding: 2em; 
     text-indent: -9999px;
 }
 #zen-explanation h3 {
     background: url('images/SWA.png') no-repeat top center;
     background-size: contain; 
-    min-height: 200px; 
+    min-height: 150px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
     margin-left: 2em; 
     margin-right: 2em;
-    padding: 1em; 
+    padding: 2em; 
     text-indent: -9999px;
 }
 #zen-participation h3 {
     background: url('images/Participation.png') no-repeat top center;
     background-size: contain; 
-    min-height: 200px; 
+    min-height: 150px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
@@ -89,7 +91,7 @@ header {
 #zen-benefits h3 {
     background: url('images/Benefits.png') no-repeat top center;
     background-size: contain; 
-    min-height: 200px; 
+    min-height: 150px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
@@ -101,7 +103,7 @@ header {
 #zen-requirements h3 {
     background: url('images/Requirements.png') no-repeat top center;
     background-size: contain; 
-    min-height: 200px; 
+    min-height: 150px; 
     background-color: #fff; 
     display: block;
     box-sizing: border-box;
@@ -110,6 +112,7 @@ header {
     padding: 2em; 
     text-indent: -9999px;
 }
+
 body {
     margin: 0;
     background: url('images/persona-5-stars.gif') ; 
@@ -131,6 +134,10 @@ h2 {
 #zen-summary {
     border: 1px
 }
+.intro [href] { 
+    text-transform: uppercase;
+}
+
 a {
   background-image: linear-gradient(
     to right,
@@ -172,4 +179,11 @@ a:hover::before {
 a:visited {
     color: rgb(0, 0, 0);
     font-weight: 700;
+}
+:root { 
+    background: none;
+}
+::selection {
+    color:#b51b1b;
+    background: rgb(243, 144, 144)
 }
