@@ -8,8 +8,11 @@ header {
     margin-left: -2em; 
     margin-right: -2em;
     padding: 2em; 
+   
 }
-
+header { 
+    text-decoration: transparent;
+}
 .page-wrapper {
     width: 90%;
     max-width: 60em;
@@ -40,19 +43,18 @@ header {
     width: 100%;
     box-sizing: border-box;
 }
-[href] { 
-    text-transform: capitalize;
-}
-
 .page-wrapper.main {
     grid-area: main;
     margin-left: 0; 
 }
-    .page-wrapper aside {
-        width: auto;
-        margin: 0 0 1em 0;
-    }
-#zen-preamble h3 { 
+.page-wrapper aside {
+    width: auto;
+   margin: 0 0 1em 0;
+}
+aside ul {
+    list-style-type: square;
+}
+[id^="zen-preamble"] h3 { 
     background: url('images/RTE.png') no-repeat top center;
     background-size: contain; 
     min-height: 250px; 
@@ -112,23 +114,30 @@ header {
     padding: 2em; 
     text-indent: -9999px;
 }
-
+p.summary  { 
+    font-style: italic; 
+}
+a:link {
+     opacity: 0.9; 
+}
+a:active { 
+    color: #b51b1b;
+}
 body {
     margin: 0;
-    background: url('images/persona-5-stars.gif') ; 
+    background: url('images/persona-5-stars.jpg') ; 
 }
-*    {
+*  {
     font-family: 'Trebuchet MS', sans-serif;
 }
-
-header {
-    text-align: center; 
+.sidebar ul li:last-child {
+     border: none;
+    }
+.sidebar ul li:nth-child(2) { 
+    font-weight: bold; 
 }
-h1 {
+h1, h2 {
     color: transparent;
-}
-h2 {
-   color: transparent
 }
 
 #zen-summary {
@@ -186,4 +195,41 @@ a:visited {
 ::selection {
     color:#b51b1b;
     background: rgb(243, 144, 144)
+}
+footer::after {
+    content: " ✦";
+    color: #b51b1b; 
+}
+p::first-letter {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #b51b1b; 
+}
+p::first-line {
+    text-transform: capitalize;
+}
+p:first-of-type {
+    margin-top: 1em;
+}
+a:focus {
+    outline: 2px dashed #b51b1b;
+}
+section:not(.intro) {
+   border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+li:nth-last-of-type(2) {
+   border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+li:nth-of-type(3) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+p:only-of-type {
+    word-spacing: .3em;
+}
+p + ul {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+ul ~ p {
+    text-indent: 2em;
+    color: #000000;
 }
