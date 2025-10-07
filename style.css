@@ -242,3 +242,17 @@ p:last-of-type {
     border-top: 1px solid rgb(255, 0, 0);
     padding-top: 0.5em;
 }
+[lang|="en"] {
+    letter-spacing: .1em;
+}
+.intro ~ .main {
+    border-top: 2px solid #ff0000;
+}
+.sidebar div:only-child {
+    border: 2px solid #ff0000;
+    padding: 0.5em;
+}
+section.intro {
+    border-bottom: red solid 1px;
+    border-radius: 8px;
+}
