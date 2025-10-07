@@ -114,9 +114,6 @@ aside ul {
     padding: 2em; 
     text-indent: -9999px;
 }
-p.summary  { 
-    font-style: italic; 
-}
 a:link {
      opacity: 0.9; 
 }
@@ -152,8 +149,7 @@ a {
     to right,
     #ee2727,
     #b51b1b 50%,
-    #000 50%
-  );
+    #000 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -229,7 +225,20 @@ p:only-of-type {
 p + ul {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-ul ~ p {
-    text-indent: 2em;
+a[title="A listing of CSS-related resources"] {
+    text-decoration: underline wavy #b51b1b;
+}
+a[href$="/"] {
+    font-style: italic;
+}
+a[href*="zen"] {
+    border-bottom: 1px solid #000000;
+}
+div:empty {
+    display: none;
+}
+p:last-of-type {
     color: #000000;
+    border-top: 1px solid rgb(255, 0, 0);
+    padding-top: 0.5em;
 }
